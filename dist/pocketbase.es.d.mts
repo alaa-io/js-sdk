@@ -1270,11 +1270,11 @@ interface BeforeSendResult {
     };
 }
 /**
- * PocketBase JS Client.
+ * Kirabase JS Client (compatible with the PocketBase record API).
  */
 declare class Client {
     /**
-     * The base PocketBase backend url address (eg. 'http://127.0.0.1.8090').
+     * The base Kirabase backend URL (eg. 'http://127.0.0.1:8090').
      */
     baseURL: string;
     /**

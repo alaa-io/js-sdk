@@ -1,11 +1,29 @@
-**⚠️ The repo has moved to https://ganigeorgiev.com/pocketbase/js-sdk.**
-
----
-
-PocketBase JavaScript SDK
+Kirabase JavaScript SDK
 ======================================================================
 
-Official JavaScript SDK (browser and node) for interacting with the [PocketBase API](https://pocketbase.io/docs).
+JavaScript SDK for the [Kirabase backend](https://github.com/alaa-io/kirabase).
+This repository is an independent fork of the MIT-licensed PocketBase JavaScript
+SDK at commit `b190b36` (version 0.28.1). It preserves the upstream Git history
+and copyright notice. The Kirabase server currently retains the compatible
+records and realtime APIs; this first SDK release does not change their behavior.
+
+Install the Kirabase package after it is published:
+
+```sh
+npm install @kirabase/js-sdk
+```
+
+```js
+import Kirabase from '@kirabase/js-sdk'
+const kb = new Kirabase('http://127.0.0.1:8090')
+```
+
+The API examples below retain upstream PocketBase names for compatibility.
+
+To develop this fork, use Node.js 20, run `npm install`, `npm test -- --run`,
+and `npm run build`. The upstream Rollup dependency still uses import
+assertions that Node.js 24 no longer parses. The build script works on Windows
+and Unix, but requires Node.js 20 until that dependency is updated.
 
 - [Installation](#installation)
 - [Usage](#usage)
